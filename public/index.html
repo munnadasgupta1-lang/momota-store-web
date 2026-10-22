@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momota Store</title>
+    <meta
+      name="description"
+      content="Momota Store starter storefront built with a simple Express API and modern storefront UI."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand-wrap">
+          <div class="brand-mark">M</div>
+          <span>Momota</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#featured">Featured</a>
+          <a href="#categories">Categories</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+        <button class="nav-button">Cart (0)</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Fresh arrivals</span>
+            <h1>Build your everyday essentials with better design.</h1>
+            <p>
+              Discover premium home, audio, and travel products curated to fit a more
+              intentional lifestyle.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#featured">Shop now</a>
+              <a class="secondary-btn" href="#categories">Explore more</a>
+            </div>
+            <div class="stats">
+              <div>
+                <strong>17k+</strong>
+                <span>happy shoppers</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>average rating</span>
+              </div>
+              <div>
+                <strong>2-day</strong>
+                <span>standard shipping</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="product-card main-product">
+              <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80"
+                alt="Featured product"
+              />
+              <div class="product-info">
+                <span>Top pick</span>
+                <h3>Pulse Speaker</h3>
+                <p>$119</p>
+              </div>
+            </div>
+            <div class="floating-badge">
+              <strong>New</strong>
+              <span>Spring drop</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="categories">
+        <div class="container">
+          <div class="section-heading">
+            <span>Shop by category</span>
+            <h2>Made to fit daily rituals</h2>
+          </div>
+          <div class="category-grid">
+            <div class="category-item">
+              <span>Home</span>
+              <strong>Essentials</strong>
+            </div>
+            <div class="category-item">
+              <span>Audio</span>
+              <strong>Sound</strong>
+            </div>
+            <div class="category-item">
+              <span>Travel</span>
+              <strong>Carry</strong>
+            </div>
+            <div class="category-item">
+              <span>Wearables</span>
+              <strong>Track</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured" class="featured">
+        <div class="container">
+          <div class="section-heading align-row">
+            <div>
+              <span>Most loved</span>
+              <h2>Featured products</h2>
+            </div>
+            <a href="#">View all</a>
+          </div>
+
+          <div id="product-list" class="product-grid"></div>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <div class="section-heading">
+            <span>Customer love</span>
+            <h2>Thoughtful products, real results</h2>
+          </div>
+          <div class="review-grid">
+            <article>
+              <div class="stars">★★★★★</div>
+              <p>
+                “The quality feels premium and the experience from browsing to delivery was seamless.”
+              </p>
+              <strong>— Jamie L.</strong>
+            </article>
+            <article>
+              <div class="stars">★★★★★</div>
+              <p>
+                “Minimal design, practical features, and incredibly easy to love every day.”
+              </p>
+              <strong>— Chloe M.</strong>
+            </article>
+            <article>
+              <div class="stars">★★★★★</div>
+              <p>
+                “This feels like the sort of store I want to come back to for thoughtful gifts.”
+              </p>
+              <strong>— Sam R.</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand-wrap">
+            <div class="brand-mark">M</div>
+            <span>Momota</span>
+          </div>
+          <p>Curated essentials for a more intentional life.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
