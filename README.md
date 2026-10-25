@@ -1,4 +1,4 @@
-# Momota Store Web
+momota-store# Momota Store Web
 
 A simple full-store starter for a modern storefront built with Express and static frontend assets.
 
